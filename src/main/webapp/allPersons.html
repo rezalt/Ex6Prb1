@@ -1,0 +1,16 @@
+
+
+<div class="col-md-6">
+    Person array length: {{persons.length}}
+    
+    <table class="table">
+        <tr>
+            <th>Name</th>
+            <th>Details</th>
+        </tr>
+        <tr ng-repeat="x in persons">
+            <td>{{x.name}}</td>
+            <td> <a ng-href="#personDetails/{{x.id}}"> {{x.id}} </a></td>
+        </tr>
+    </table>  
+</div>
